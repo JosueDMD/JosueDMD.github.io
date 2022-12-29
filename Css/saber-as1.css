@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+/* --------------- HEADER --------------- */
+
+header{
+    height: 75px;
+    position: fixed;
+    background-image: linear-gradient(0deg, #0477e2 0%, #054ad3 100%);
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logo-img{
+    z-index: 101;
+    width: 70px;
+    transition: 0.5s;
+}
+
+header.abajo{
+    height: 50px;
+}
+
+.logo-img.abajo{
+    width: 60px;
+}
+
+.menu a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: all 0.5s;
+}
+
+.menu i{
+    background: #3d4349a2;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.mostrar-menu,
+.esconder-menu{
+    color: #fff;
+    font-size: 50px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.4s;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: #000;
+}
+
+#check{
+    display: none;
+}
+
+/* --------------- FIN HEADER --------------- */
+
+
+
+/* --------------- MAIN --------------- */
+
+#main{
+    text-align: center;
+    background: #e0dfdf;
+}
+
+#main h1{
+    padding-top: 120px;
+    color: #032f80;
+    font-size: 70px;
+    font-weight: 550;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all 1s ease;
+}
+
+.parrafo{
+    padding: 50px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.parrafo img{
+    width: 600px;
+    float: right;
+    margin-left: 25px;
+    box-shadow: 0rem 0.2rem 0.6rem #000;
+}
+
+.parrafo .img-cel{
+    display: none;
+}
+
+/* --------------- FIN MAIN --------------- */
+
+
+
+/* --------------- MVV --------------- */
+
+#mvv{
+    background:  #9b9a9ade;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#mvv div{
+    padding: 30px;
+    width: 350px;
+    display: inline-block;
+    border-left: 4px solid #000;
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+    transition: all .8s;
+}
+
+#mvv div:hover{
+    border-left: 4px solid #0748ca;
+}
+
+#mvv div h2{
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+#mvv div p{
+    text-align: left;
+    font-size: 20px;
+}
+
+/* --------------- FIN MVV --------------- */
+
+
+
+/* --------------- CONTACTO --------------- */
+
+#contacto{
+    background:  #666565de;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#contacto div{
+    padding: 30px;
+    width: 350px;
+    display: inline-block;
+}
+
+#contacto div h2{
+    padding-bottom: 10px;
+    font-size: 30px;
+    border-bottom: 3px solid #000000;
+    transition: all 0.5s;
+}
+
+#contacto div:hover h2{
+    border-bottom: 3px solid #0748ca;
+}
+
+#contacto div p{
+    text-align: left;
+    padding-top: 30px;
+    font-size: 15px;
+}
+
+#contacto div a i{
+    text-align: left;
+    margin-top: 15px;
+    color: #551A8B;
+    font-size: 2rem;
+    margin-right: 30px;
+    transition: all 0.3s;
+}
+
+#contacto div a i:hover{
+    transform: scale(1.2);
+}
+
+.link{
+    text-decoration: none;
+    display: block;
+    padding-top: 30px;
+    font-size: 20px;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.link:hover{
+    color: #000;
+    transform: scale(1.1);
+}
+
+#contacto div h3{
+    margin-top: 30px;
+}
+
+/* --------------- FIN CONTACTO --------------- */
+
+
+
+/* RESPONSIVE */
+
+/* tablet */
+@media(max-width: 900px){
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    .mostrar-menu{
+        top: 15px;
+        right: 15px;
+        margin-right: 30px;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(180deg, #0a8cf7 0%, #0743bb 100%);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: all 0.8s;
+    }
+    .menu a{
+        font-size: 35px;
+        font-weight: 500;
+        display: block;
+        padding: 20px;
+        color: #fff;
+        margin: 20px;
+    }
+    .menu a:hover,
+    .mostrar-menu:hover,
+    .esconder-menu:hover{
+        border: none;
+    }
+    .menu i{
+        background: #15477e;
+        padding: 10px;
+        margin-right: 0;
+        border-radius: 50%;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    .parrafo img{
+        float: none;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-height: 600px){
+    .menu a{
+        padding: 0;
+    }
+}
+/* celular */
+@media(max-width: 500px){
+    .parrafo .img-cel{
+        display: block;
+    }
+    .parrafo .img-pc{
+        display: none;
+    }
+    .parrafo{
+        line-height: normal;
+        padding: 20px;
+        text-align: left;
+    }
+    #main h1{
+        font-size: 40px;
+    }
+}
+
+/* FIN RESPONSIVE */
+
+
+::-webkit-scrollbar {
+    width: 7px;
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background:  #025ab8;
+    border-radius: 5px;
+}
